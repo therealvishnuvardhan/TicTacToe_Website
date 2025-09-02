@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>TIC TAC TOE</h1>
+  <button id="startGame">Start Game</button>
+  <div id="container" style="display: none;">
+    <div id="button-container">
+      <button id="startX" class="start">Start as X</button>
+      <button id="startO" class="start">Start as O</button><br>
+      <button id="resetButton">Reset</button>
+      <button id="startNewGame">Next Round</button>
+      <button id="pauseMusic">Pause Music</button>
+      <button id="playMusic" style="display:none;">Start Music</button>   
+    </div>
+  </div>
+
+    <div class="grid">
+  <div class="card"><button id="button1"></button></div>
+  <div class="card"><button id="button2"></button></div>
+  <div class="card"><button id="button3"></button></div>
+  <div class="card"><button id="button4"></button></div>
+  <div class="card"><button id="button5"></button></div>
+  <div class="card"><button id="button6"></button></div>
+  <div class="card"><button id="button7"></button></div>
+  <div class="card"><button id="button8"></button></div>
+  <div class="card"><button id="button9"></button></div>
+  
+
+</div>
+
+<div id="score-container">
+  
+    <h2>SCORE X : <span id="scoreX">0</span></h2>
+  
+  
+    <h2>SCORE O : <span id="scoreO">0</span></h2>
+    
+    <h2>DRAW : <span id="draw">0</span></h2>
+    
+  </div>
+  
+  <div id="result"></div>
+  <audio id="winAudio" src="victory.mp3"></audio>
+  <audio id="sadAudio" src="sad.mp3"></audio>
+  <audio id="startmusic" src="music.mp3"></audio>
+
+<script src="GAME.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+body{
+    background-image: url("b1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    max-width: 300px;
+    min-width: 200px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.279);
+    border-radius: 20px;
+    
+}
+.card button:hover{
+    background-color: hsla(0, 0%, 100%, 0.77);
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.card button:active{
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+    background-color: hsla(0, 4%, 75%, 0.429);
+}
+.card button{
+    background-color: hsla(0, 0%, 100%, 0.277);
+    border: none;
+    font-size: 4rem;
+    font-weight: bold;
+    color: hsla(0, 77%, 29%, 0.845);
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px; 
+    font-family: 'japanfont', sans-serif;
+}
+h1{
+    color: hsla(0, 0%, 0%, 0.845);
+    font-family: 'japanfont', sans-serif;
+    text-shadow: 0 0 10px hsla(0, 0%, 30%, 0.726),
+                   0 0 20px hsla(0, 0%, 30%, 0.719),
+                   0 0 40px hsla(0, 0%, 30%, 0.734),
+                   0 0 80px hsla(0, 0%, 30%, 0.518);
+    font-size: 6rem;
+    margin-top: px;
+    margin-bottom: 0px;
+    
+    display: flex;
+}
+@font-face {
+    font-family: 'japanfont'; 
+    src: url('japanfont.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'japanfontnew'; 
+    src: url('final.ttf') format('truetype');
+}
+
+#button-container{
+    
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    height: auto;
+    margin-top: 0px;
+    gap: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    
+}
+#container{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+
+#button-container button{
+   margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 0.673);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:hsl(0, 100%, 2%);
+    font-family: 'japanfont', sans-serif;
+    
+}
+
+#button-container button:hover{
+    background-color: hsla(0, 11%, 93%, 0.514);
+}
+
+#button-container button:active{
+
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+#score-container{
+    position: absolute;
+    left: 100px;         /* Distance from the left edge */
+    top: 50vh;         /* Adjust as needed for vertical position */
+    display: block;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    float: none; 
+    background-color: hsla(0, 100%, 2%, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'japanfontnew', sans-serif;
+    font-size: 1.2rem;
+    width: 200px;
+    border-radius: 20px;
+    
+   
+}
+
+#score-container span {
+    font-family: 'final.ttf'; /* fallback font for numbers */
+    color: #fff; /* keep numbers visible */
+    font-size: 2rem;
+}   
+
+#result {
+   position: absolute;
+   right: 100px;         /* Distance from the left edge */
+   top: 50vh;         /* Adjust as needed for vertical position */
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   height: auto;
+   float: none; 
+   background-color: hsla(0, 100%, 2%, 0);
+   color: white;
+   padding: 10px;
+   border-radius: 20px;
+   font-family: 'japanfontnew', sans-serif;
+   font-size: 5rem;
+   width: 200px;
+   border-radius: 20px;
+
+}
+#startGame{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 0.673);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:hsl(0, 100%, 2%);
+    font-family: 'japanfont', sans-serif;
+} 
+
+#startGame:hover{
+    background-color: hsla(0, 11%, 93%, 0.514);
+}
+
+#startGame:active{
+
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#stopMusic{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: hsla(0, 0%, 100%, 0.673);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:hsl(0, 100%, 2%);
+    font-family: 'japanfont', sans-serif;
+}
+
+#stopMusic:hover{
+    background-color: hsla(0, 11%, 93%, 0.514);
+}
+
+#stopMusic:active{
+
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
+}
